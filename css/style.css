@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+}
+
+.main {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background: url(../assets/bg.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.container {
+  position: absolute;
+  top: calc(50% - 222px);
+  left: calc(50% - 222px);
+}
+
+.container:hover .hide {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  cursor: help;
+}
+
+.slogan {
+  font-size: 3em;
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  position: absolute;
+  left: calc(50% - 160px);
+  top: -160px;
+  font-family: 'Amatic SC', cursive;
+}
+
+.slogan span {
+  font-size: 2rem;
+  display: block;
+}
+
+.hide {
+  display: none;
+}
