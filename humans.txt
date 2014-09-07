@@ -1,0 +1,32 @@
+/* TEAM */
+	SassGirl: SormenPills
+	Twitter: @sormenpills
+
+	SassGirl: Garazi Iñurrieta
+	Twitter: @Garazi_i
+
+	SassGirl: Alejandra Arri
+	Twitter: @ladyCircus 
+
+	SassGirl: Oihana Alberdi
+	Twitter: @oalberdi 
+
+	SassGirl: Naiara Abaroa
+	Twitter: @nabaroa 
+
+
+
+/* THANKS */
+
+	Office space: Wimi5
+	Twitter: @wimi_5
+	From: Bilbao, Basque Country, Spain
+
+
+		
+
+/* SITE */
+	Last update:2014/09/07
+	Language: English 
+	Doctype:HTML5
+	Tools: Sublime Text, iTerm, Grunt, Sass
