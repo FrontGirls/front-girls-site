@@ -27,7 +27,9 @@
 	}
 
 })();
+
 //Open close pages
+//Please, be lenient with next lines, we are not very skilled in JS, thanks XD
 
 (function(){
 
@@ -39,6 +41,7 @@
     about = document.getElementById('about'), 
     resources = document.getElementById('resources'),
     menu = document.getElementById('menu');
+    main = document.getElementById('main');
 
     //Show about page when button is clicked
 	var open = false;
@@ -48,6 +51,7 @@
 	  if(!open){
 	    classie.add(about, 'open');
 	    classie.add(menu, 'down');
+	    classie.add(main, 'show');
 	  }
 	  else{
 	  }
@@ -61,6 +65,7 @@
 	  if(!openRes){
 	    classie.add(resources, 'open');
 	    classie.add(menu, 'down');
+	    classie.add(main, 'show');
 	  }
 	  else{
 	  }
@@ -75,6 +80,7 @@
 	  if(!close){
 	    classie.remove(about, 'open');
 	    classie.remove(menu, 'down');
+	    classie.remove(main, 'show');
 	  }
 	  else{
 	  
@@ -89,6 +95,7 @@
 	  if(!close){
 	    classie.remove(resources, 'open');
 	    classie.remove(menu, 'down');
+	    classie.remove(main, 'show');
 	  }
 	  else{
 	  

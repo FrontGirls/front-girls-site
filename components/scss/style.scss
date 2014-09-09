@@ -12,6 +12,14 @@ body {
   font-family: sans-serif;
 }
 
+main {
+  height: 100%;
+  display: none;
+  &.show {
+    display: block;
+  }
+}
+
 .main {
   width: 100%;
   position: absolute;

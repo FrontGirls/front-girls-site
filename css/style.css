@@ -421,6 +421,12 @@ body {
   margin: 0;
   font-family: sans-serif; }
 
+main {
+  height: 100%;
+  display: none; }
+  main.show {
+    display: block; }
+
 .main {
   width: 100%;
   position: absolute;
