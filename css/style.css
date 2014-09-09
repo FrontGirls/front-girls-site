@@ -134,6 +134,8 @@ body {
   font-family: 'Lato', Arial, sans-serif; }
   .component > h2 {
     position: absolute;
+    top: 0;
+    left: 0;
     overflow: hidden;
     width: 100%;
     text-align: center;
