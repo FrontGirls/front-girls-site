@@ -1,45 +1,45 @@
 module.exports = function(grunt){
 
 	require('load-grunt-tasks')(grunt);
- 
-    grunt.initConfig({
-    	
-	    watch: {
 
-		  scss: {       
-		    files: 'components/scss/style.scss',       
-		    tasks: ['sass','autoprefixer']     
+	grunt.initConfig({
+
+		watch: {
+
+			scss: {       
+				files: 'components/scss/style.scss',       
+				tasks: ['sass','autoprefixer']     
 		  } //scss
 		},// watch
-	
 
-    	 sass: {
-	        options: {
-	            sourceMap: true
-	        },
-	        dist: {
-	            files: {
-	                'css/style.css': 'components/scss/style.scss'
-	            }
-	        }
-	    },
 
-		  autoprefixer: {
+		sass: {
+			options: {
+				sourceMap: true
+			},
+			dist: {
+				files: {
+					'css/style.css': 'components/scss/style.scss'
+				}
+			}
+		},
 
-			  options:{
-			    browsers: ['last 2 version','ie 9']
-			  },
-			 
-			  single_file: {
-			    src: 'css/style.css'
-			  }
-			 
-			}//autoprefixer
+		autoprefixer: {
+
+			options:{
+				browsers: ['last 2 version','ie 9']
+			},
+
+			single_file: {
+				src: 'css/style.css'
+			}
+
+		}//autoprefixer
 
 		// browserSync: {
-		 
+
 		//   dev: {
-		  
+
 		//     bsFiles: {
 		//       src : [
 		//         'sassGirlsSite/css/*.css',
@@ -51,7 +51,7 @@ module.exports = function(grunt){
 		//         '**/*.html'
 		//         ]
 		//       },
-		  
+
 		//     options: {
 		//         watchTask: true,
 		//         debugInfo: true,
@@ -63,14 +63,15 @@ module.exports = function(grunt){
 		//           links: true,
 		//           forms: true
 		//         }
-		 
+
 		//     }
-		  
+
 		//   } //dev
-		 
+
 		// } // browserSync
-    
+
     });//initConfig
+	
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	// grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-autoprefixer');
