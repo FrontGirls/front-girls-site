@@ -2,22 +2,8 @@
 //SassGirls. Girls with superpowers.
 //This scss has no arquitecture yet. We will work on it in next sassGirlsSessions. 
 //----------------------------
-
-@import "helpers/variables";
-@import "extras/circular_navigation";
-@import "extras/icomoon";
-
 body {
   margin: 0;
-  font-family: sans-serif;
-}
-
-main {
-  height: 100%;
-  display: none;
-  &.show {
-    display: block;
-  }
 }
 
 .main {
@@ -26,57 +12,6 @@ main {
   height: 100%;
   background: url(../assets/bg.jpg) 0 0 no-repeat;
   background-size: cover;
-  padding: 40px 80px;
-  box-sizing: border-box;
-  overflow: hidden;
-  h1,.h1 {
-    font-family: 'Amatic SC', cursive;
-    font-size: 8em;
-  }
-  h2,.h2 {
-    font-family: 'Amatic SC', cursive;
-    font-size: 4em;
-  }
-  .banner {
-    font-family: 'Amatic SC', cursive;
-    font-size: 2em;
-    background: $color;
-    color: $white;
-    padding: 10px;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-  }
-  strong {
-    // font-family: 'Amatic SC', cursive;
-    // background: $color;
-    color: $color;
-  }
-  &.about,
-  &.resources {
-    width: calc(100% - 40px);
-    position: absolute;
-    height: 100%;
-    background: rgba($white, 0.9);
-    color: black;
-    margin-left: 40px;
-    display: none;
-    &.open {
-      display: block;
-    }
-  }
-  header {
-    position: fixed;
-  }
-  .content {
-    overflow-y: auto;
-    position: absolute;
-    top: 200px;
-    height: calc(100% - 200px);
-    padding-right: 80px;
-    font-size: 1.1em;
-    max-width: 900px;
-  }
 }
 
 .container {
@@ -86,25 +21,11 @@ main {
   &:hover .hide {
     display: block;
   }
-  &.down {
-    // top: inherit;
-    // bottom: -180px;
-    // .cn-button {
-    //   top: 200px;
-    // }
-    display: none;
-    .slogan {
-      display: none;
-    }
-  }
 }
 
 img {
   max-width: 100%;
   cursor: help;
-  &.logo {
-    margin-top: 22px;
-  }
 }
 
 .slogan {
@@ -120,71 +41,6 @@ img {
     font-size: 2rem;
     display: block;
   }
-}
-
-ul.sassGirls {
-  margin: 40px 0;
-  li {
-    border-radius: 500rem;
-    width: 150px;
-    height: 150px;
-    margin-right: 10px;
-    border: 3px solid $color;
-    display: inline-block;
-    text-align: center;
-    background-size: cover;
-    &:hover {
-      span {
-        color: black;
-      }
-    }
-    span {
-      position: absolute;
-      bottom: -30px;
-      color: $color;
-      left: 10%;
-    }
-    a {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-    }
-  }
-}
-
-.sormenpills {
-  background: url(https://pbs.twimg.com/profile_images/3156478312/fb686e4642009346715dab6fae963e16.jpeg) 0 0 no-repeat;
-}
-
-.nabaroa {
-  background: url(https://pbs.twimg.com/profile_images/468791006284894208/vA1WCk9K.jpeg) 0 0 no-repeat;
-}
-
-.garazi {
-  background: url(https://pbs.twimg.com/profile_images/476091490448715778/ZTcBp5kO.jpeg) 0 0 no-repeat;
-}
-
-.ladycircus {
-  background: url(https://pbs.twimg.com/profile_images/445150785253691392/fv3sLe5d.jpeg) 0 0 no-repeat;
-}
-
-.oalberdi {
-  background: url(https://pbs.twimg.com/profile_images/1796442072/oalberdi_twet.jpg) 0 0 no-repeat;
-}
-
-.close-button {
-  background: $color;
-  color: $white;
-  width: 40px;
-  height: 40px;
-  position: fixed;
-  right: 0;
-  top: 0;
-  cursor: pointer;
-  text-align: center;
-  font-size: 2.3em;
 }
 
 .hide {
