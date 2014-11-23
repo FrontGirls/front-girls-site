@@ -5,6 +5,7 @@
   src: url("../fonts/codropsicons/codropsicons.eot?#iefix") format("embedded-opentype"), url("../fonts/codropsicons/codropsicons.woff") format("woff"), url("../fonts/codropsicons/codropsicons.ttf") format("truetype"), url("../fonts/codropsicons/codropsicons.svg#codropsicons") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 .cn-button {
   display: none; }
 
@@ -110,12 +111,13 @@
 @media screen and (max-width: 25em) {
   .codrops-icon span {
     display: none; } }
+
 * {
-  position: relative;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 0; }
+
+ul, li {
   list-style: none; }
 
 html {
@@ -182,15 +184,15 @@ body {
   border-radius: 50%;
   background: transparent;
   opacity: 0;
-  -webkit-transition: all .3s ease 0.3s;
-  -moz-transition: all .3s ease 0.3s;
-  transition: all .3s ease 0.3s;
+  -webkit-transition: all 0.3s ease 0.3s;
+  transition: all 0.3s ease 0.3s;
   -webkit-transform: scale(0.1);
   -ms-transform: scale(0.1);
-  -moz-transform: scale(0.1);
   transform: scale(0.1);
   pointer-events: none;
   overflow: hidden; }
+  .csstransforms .cn-wrapper > * {
+    position: relative; }
   .csstransforms .cn-wrapper:after {
     content: ".";
     display: block;
@@ -208,11 +210,9 @@ body {
 .csstransforms .opened-nav {
   border-radius: 50%;
   opacity: 1;
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   -webkit-transform: scale(1);
-  -moz-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
   pointer-events: auto;
@@ -227,16 +227,14 @@ body {
   width: 10em;
   height: 10em;
   font-size: 1.5em;
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   -webkit-transform: rotate(76deg) skew(60deg);
-  -moz-transform: rotate(76deg) skew(60deg);
   -ms-transform: rotate(76deg) skew(60deg);
   transform: rotate(76deg) skew(60deg);
   -webkit-transform-origin: 100% 100%;
-  -moz-transform-origin: 100% 100%;
-  transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+      transform-origin: 100% 100%;
   pointer-events: none; }
   .csstransforms .cn-wrapper li a {
     position: absolute;
@@ -253,7 +251,6 @@ body {
     font-size: 1.2em;
     line-height: 2;
     -webkit-transform: skew(-60deg) rotate(-75deg) scale(1);
-    -moz-transform: skew(-60deg) rotate(-75deg) scale(1);
     -ms-transform: skew(-60deg) rotate(-75deg) scale(1);
     transform: skew(-60deg) rotate(-75deg) scale(1);
     -webkit-backface-visibility: hidden;
@@ -261,7 +258,7 @@ body {
     pointer-events: auto; }
     .csstransforms .cn-wrapper li a > span {
       position: relative;
-      top: .1em;
+      top: 0.1em;
       display: block;
       font-size: 2.5em; }
     .csstransforms .cn-wrapper li a > em {
@@ -275,42 +272,34 @@ body {
         font-family: 'Amatic SC', cursive;
         font-style: normal; }
 .csstransforms .opened-nav li {
-  -webkit-transition: all .3s ease .3s;
-  -moz-transition: all .3s ease .3s;
-  transition: all .3s ease .3s; }
+  -webkit-transition: all 0.3s ease 0.3s;
+  transition: all 0.3s ease 0.3s; }
   .csstransforms .opened-nav li:first-child {
     -webkit-transform: rotate(-20deg) skew(60deg);
-    -moz-transform: rotate(-20deg) skew(60deg);
     -ms-transform: rotate(-20deg) skew(60deg);
     transform: rotate(-20deg) skew(60deg); }
   .csstransforms .opened-nav li:nth-child(2) {
     -webkit-transform: rotate(12deg) skew(60deg);
-    -moz-transform: rotate(12deg) skew(60deg);
     -ms-transform: rotate(12deg) skew(60deg);
     transform: rotate(12deg) skew(60deg); }
   .csstransforms .opened-nav li:nth-child(3) {
     -webkit-transform: rotate(44deg) skew(60deg);
-    -moz-transform: rotate(44deg) skew(60deg);
     -ms-transform: rotate(44deg) skew(60deg);
     transform: rotate(44deg) skew(60deg); }
   .csstransforms .opened-nav li:nth-child(4) {
     -webkit-transform: rotate(76deg) skew(60deg);
-    -moz-transform: rotate(76deg) skew(60deg);
     -ms-transform: rotate(76deg) skew(60deg);
     transform: rotate(76deg) skew(60deg); }
   .csstransforms .opened-nav li:nth-child(5) {
     -webkit-transform: rotate(108deg) skew(60deg);
-    -moz-transform: rotate(108deg) skew(60deg);
     -ms-transform: rotate(108deg) skew(60deg);
     transform: rotate(108deg) skew(60deg); }
   .csstransforms .opened-nav li:nth-child(6) {
     -webkit-transform: rotate(140deg) skew(60deg);
-    -moz-transform: rotate(140deg) skew(60deg);
     -ms-transform: rotate(140deg) skew(60deg);
     transform: rotate(140deg) skew(60deg); }
   .csstransforms .opened-nav li:nth-child(7) {
     -webkit-transform: rotate(172deg) skew(60deg);
-    -moz-transform: rotate(172deg) skew(60deg);
     -ms-transform: rotate(172deg) skew(60deg);
     transform: rotate(172deg) skew(60deg); }
 
@@ -318,7 +307,7 @@ body {
 .no-csstransforms .cn-wrapper {
   overflow: hidden;
   margin: 10em auto;
-  padding: .5em;
+  padding: 0.5em;
   text-align: center; }
   .no-csstransforms .cn-wrapper ul {
     display: inline-block; }
@@ -349,32 +338,35 @@ body {
     width: 4em;
     height: 4em;
     line-height: 4em; } }
+
 @media only screen and (max-width: 500px) {
   .no-ccstransforms .cn-wrapper {
-    padding: .5em; }
-
+    padding: 0.5em; }
   .no-csstransforms .cn-wrapper li {
     width: 4em;
     height: 4em;
-    font-size: .9em;
+    font-size: 0.9em;
     line-height: 4em; } }
+
 @media only screen and (max-width: 480px) {
   .csstransforms .cn-wrapper {
-    font-size: .68em; }
-
+    font-size: 0.68em; }
   .cn-button {
     font-size: 1em; } }
+
 @media only screen and (max-width: 420px) {
   .no-csstransforms .cn-wrapper li {
     width: 100%;
     height: 3em;
     line-height: 3em; } }
+
 @font-face {
   font-family: 'sassGirls';
   src: url("../components/fonts/sassGirls.eot?-r44l3n");
   src: url("../components/fonts/sassGirls.eot?#iefix-r44l3n") format("embedded-opentype"), url("../components/fonts/sassGirls.woff?-r44l3n") format("woff"), url("../components/fonts/sassGirls.ttf?-r44l3n") format("truetype"), url("../components/fonts/sassGirls.svg?-r44l3n#sassGirls") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'sassGirls';
   speak: none;
@@ -421,12 +413,6 @@ body {
   margin: 0;
   font-family: sans-serif; }
 
-main {
-  height: 100%;
-  display: none; }
-  main.show {
-    display: block; }
-
 .main {
   width: 100%;
   position: absolute;
@@ -470,7 +456,7 @@ main {
     position: absolute;
     top: 200px;
     height: calc(100% - 200px);
-    padding-right: 80px;
+    padding: 0 80px 50px 0;
     font-size: 1.1em;
     max-width: 900px; }
 
@@ -510,18 +496,20 @@ ul.sassGirls {
     border-radius: 500rem;
     width: 150px;
     height: 150px;
-    margin-right: 10px;
+    margin: 0 10px 40px 0;
     border: 3px solid #d72c7c;
     display: inline-block;
     text-align: center;
-    background-size: cover; }
+    background-size: cover;
+    position: relative; }
     ul.sassGirls li:hover span {
       color: black; }
     ul.sassGirls li span {
       position: absolute;
       bottom: -30px;
       color: #d72c7c;
-      left: 10%; }
+      width: 100px;
+      left: calc(50% - 50px); }
     ul.sassGirls li a {
       position: absolute;
       width: 100%;
@@ -533,10 +521,10 @@ ul.sassGirls {
   background: url(https://pbs.twimg.com/profile_images/3156478312/fb686e4642009346715dab6fae963e16.jpeg) 0 0 no-repeat; }
 
 .nabaroa {
-  background: url(https://pbs.twimg.com/profile_images/468791006284894208/vA1WCk9K.jpeg) 0 0 no-repeat; }
+  background: url("https://pbs.twimg.com/profile_images/528258987637362689/IoI3ZdKf_400x400.jpeg") 0 0 no-repeat; }
 
 .garazi {
-  background: url(https://pbs.twimg.com/profile_images/476091490448715778/ZTcBp5kO.jpeg) 0 0 no-repeat; }
+  background: url("https://pbs.twimg.com/profile_images/533918192612429824/5-5CWJdp_400x400.jpeg") 0 0 no-repeat; }
 
 .ladycircus {
   background: url(https://pbs.twimg.com/profile_images/445150785253691392/fv3sLe5d.jpeg) 0 0 no-repeat; }
