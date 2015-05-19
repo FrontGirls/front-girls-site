@@ -65,9 +65,12 @@ body {
     position: absolute;
     top: 200px;
     height: calc(100% - 200px);
-    padding: 0 80px 50px 0;
+    padding: 0 0px 50px 0;
     font-size: 1.1em;
-    max-width: 900px;
+    width: 100%;
+    p {
+      max-width: 900px;
+    }
   }
 }
 
