@@ -20,6 +20,7 @@
 
 .container > section {
   font-family: 'Lato', Arial, sans-serif; }
+
 .container > header {
   margin: 0 auto;
   padding: 2em;
@@ -125,7 +126,7 @@ html {
 
 body {
   height: 100%;
-  background: #d72c7c;
+  background: #4d4d4c;
   color: white; }
 
 .component {
@@ -163,7 +164,7 @@ body {
   border-radius: 50%;
   background: none;
   background-color: white;
-  color: #d72c7c;
+  color: #4d4d4c;
   text-align: center;
   font-weight: 700;
   font-size: 1.5em;
@@ -184,9 +185,7 @@ body {
   border-radius: 50%;
   background: transparent;
   opacity: 0;
-  -webkit-transition: all 0.3s ease 0.3s;
-  transition: all 0.3s ease 0.3s;
-  -webkit-transform: scale(0.1);
+  transition: all .3s ease 0.3s;
   -ms-transform: scale(0.1);
   transform: scale(0.1);
   pointer-events: none;
@@ -207,16 +206,16 @@ body {
     border-radius: 50%;
     z-index: 10;
     color: transparent; }
+
 .csstransforms .opened-nav {
   border-radius: 50%;
   opacity: 1;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transform: scale(1);
+  transition: all .3s ease;
   -ms-transform: scale(1);
   transform: scale(1);
   pointer-events: auto;
-  background: rgba(215, 44, 124, 0.9); }
+  background: rgba(77, 77, 76, 0.9); }
+
 .csstransforms .cn-wrapper li {
   position: absolute;
   top: 50%;
@@ -227,12 +226,9 @@ body {
   width: 10em;
   height: 10em;
   font-size: 1.5em;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-transform: rotate(76deg) skew(60deg);
+  transition: all .3s ease;
   -ms-transform: rotate(76deg) skew(60deg);
   transform: rotate(76deg) skew(60deg);
-  -webkit-transform-origin: 100% 100%;
   -ms-transform-origin: 100% 100%;
       transform-origin: 100% 100%;
   pointer-events: none; }
@@ -250,56 +246,47 @@ body {
     text-decoration: none;
     font-size: 1.2em;
     line-height: 2;
-    -webkit-transform: skew(-60deg) rotate(-75deg) scale(1);
     -ms-transform: skew(-60deg) rotate(-75deg) scale(1);
     transform: skew(-60deg) rotate(-75deg) scale(1);
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     pointer-events: auto; }
     .csstransforms .cn-wrapper li a > span {
       position: relative;
-      top: 0.1em;
+      top: .1em;
       display: block;
       font-size: 2.5em; }
     .csstransforms .cn-wrapper li a > em {
       display: none; }
     .csstransforms .cn-wrapper li a:hover, .csstransforms .cn-wrapper li a:active, .csstransforms .cn-wrapper li a:focus {
       color: white;
-      text-shadow: 2px 2px 2px #d72c7c; }
+      text-shadow: 2px 2px 2px #4d4d4c; }
       .csstransforms .cn-wrapper li a:hover em, .csstransforms .cn-wrapper li a:active em, .csstransforms .cn-wrapper li a:focus em {
         display: block;
         font-size: 20px;
         font-family: 'Amatic SC', cursive;
         font-style: normal; }
+
 .csstransforms .opened-nav li {
-  -webkit-transition: all 0.3s ease 0.3s;
-  transition: all 0.3s ease 0.3s; }
+  transition: all .3s ease .3s; }
   .csstransforms .opened-nav li:first-child {
-    -webkit-transform: rotate(-20deg) skew(60deg);
     -ms-transform: rotate(-20deg) skew(60deg);
     transform: rotate(-20deg) skew(60deg); }
   .csstransforms .opened-nav li:nth-child(2) {
-    -webkit-transform: rotate(12deg) skew(60deg);
     -ms-transform: rotate(12deg) skew(60deg);
     transform: rotate(12deg) skew(60deg); }
   .csstransforms .opened-nav li:nth-child(3) {
-    -webkit-transform: rotate(44deg) skew(60deg);
     -ms-transform: rotate(44deg) skew(60deg);
     transform: rotate(44deg) skew(60deg); }
   .csstransforms .opened-nav li:nth-child(4) {
-    -webkit-transform: rotate(76deg) skew(60deg);
     -ms-transform: rotate(76deg) skew(60deg);
     transform: rotate(76deg) skew(60deg); }
   .csstransforms .opened-nav li:nth-child(5) {
-    -webkit-transform: rotate(108deg) skew(60deg);
     -ms-transform: rotate(108deg) skew(60deg);
     transform: rotate(108deg) skew(60deg); }
   .csstransforms .opened-nav li:nth-child(6) {
-    -webkit-transform: rotate(140deg) skew(60deg);
     -ms-transform: rotate(140deg) skew(60deg);
     transform: rotate(140deg) skew(60deg); }
   .csstransforms .opened-nav li:nth-child(7) {
-    -webkit-transform: rotate(172deg) skew(60deg);
     -ms-transform: rotate(172deg) skew(60deg);
     transform: rotate(172deg) skew(60deg); }
 
@@ -307,7 +294,7 @@ body {
 .no-csstransforms .cn-wrapper {
   overflow: hidden;
   margin: 10em auto;
-  padding: 0.5em;
+  padding: .5em;
   text-align: center; }
   .no-csstransforms .cn-wrapper ul {
     display: inline-block; }
@@ -330,6 +317,7 @@ body {
     .no-csstransforms .cn-wrapper li.active a {
       background-color: #6F325C;
       color: white; }
+
 .no-csstransforms .cn-button {
   display: none; }
 
@@ -341,16 +329,16 @@ body {
 
 @media only screen and (max-width: 500px) {
   .no-ccstransforms .cn-wrapper {
-    padding: 0.5em; }
+    padding: .5em; }
   .no-csstransforms .cn-wrapper li {
     width: 4em;
     height: 4em;
-    font-size: 0.9em;
+    font-size: .9em;
     line-height: 4em; } }
 
 @media only screen and (max-width: 480px) {
   .csstransforms .cn-wrapper {
-    font-size: 0.68em; }
+    font-size: .68em; }
   .cn-button {
     font-size: 1em; } }
 
@@ -417,8 +405,7 @@ body {
   width: 100%;
   position: absolute;
   height: 100%;
-  background: url(../assets/bg.jpg) 0 0 no-repeat;
-  background-size: cover;
+  background: linear-gradient(to left, #EE1A47 0%, #FF3366 100%);
   padding: 40px 80px;
   box-sizing: border-box;
   overflow: hidden; }
@@ -431,14 +418,14 @@ body {
   .main .banner {
     font-family: 'Amatic SC', cursive;
     font-size: 2em;
-    background: #d72c7c;
+    background: #4d4d4c;
     color: white;
     padding: 10px;
     display: inline-block;
     text-align: center;
     text-decoration: none; }
   .main strong {
-    color: #d72c7c; }
+    color: #F62555; }
   .main.about, .main.resources {
     width: calc(100% - 40px);
     position: absolute;
@@ -483,36 +470,36 @@ img {
   font-size: 3em;
   text-align: center;
   color: white;
-  text-shadow: 3px 3px 3px black;
   position: absolute;
-  left: calc(50% - 160px);
-  top: -160px;
-  font-family: 'Amatic SC', cursive; }
+  left: calc(50% - 235px);
+  top: -110px;
+  font-family: 'Lato', Arial, sans-serif;
+  text-transform: uppercase; }
   .slogan span {
-    font-size: 2rem;
+    font-size: 4rem;
     display: block; }
 
-ul.sassGirls {
+ul.frontGirls {
   margin: 40px 0; }
-  ul.sassGirls li {
+  ul.frontGirls li {
     border-radius: 500rem;
     width: 150px;
     height: 150px;
-    margin: 0 10px 40px 0;
-    border: 3px solid #d72c7c;
+    margin: 0 10px  40px 0;
+    border: 3px solid #F62555;
     display: inline-block;
     text-align: center;
     background-size: cover;
     position: relative; }
-    ul.sassGirls li:hover span {
+    ul.frontGirls li:hover span {
       color: black; }
-    ul.sassGirls li span {
+    ul.frontGirls li span {
       position: absolute;
       bottom: -30px;
-      color: #d72c7c;
+      color: #F62555;
       width: 100px;
       left: calc(50% - 50px); }
-    ul.sassGirls li a {
+    ul.frontGirls li a {
       position: absolute;
       width: 100%;
       height: 100%;
@@ -529,13 +516,13 @@ ul.sassGirls {
   background: url(../assets/garazi.jpeg) 0 0 no-repeat; }
 
 .ladycircus {
-  background: url(../assets/ale.jpeg) 0 0 no-repeat; }
+  background: url(../assets/aleja.jpeg) 0 0 no-repeat; }
 
 .oalberdi {
   background: url(../assets/oihana.jpg) 0 0 no-repeat; }
 
 .close-button {
-  background: #d72c7c;
+  background: #F62555;
   color: white;
   width: 40px;
   height: 40px;

@@ -16,8 +16,7 @@ body {
   width: 100%;
   position: absolute;
   height: 100%;
-  background: url(../assets/bg.jpg) 0 0 no-repeat;
-  background-size: cover;
+  background: linear-gradient(to left, #EE1A47  0%, #FF3366 100%);
   padding: 40px 80px;
   box-sizing: border-box;
   overflow: hidden;
@@ -40,9 +39,7 @@ body {
     text-decoration: none;
   }
   strong {
-    // font-family: 'Amatic SC', cursive;
-    // background: $color;
-    color: $color;
+    color: $accent-color;
   }
   &.about,
   &.resources {
@@ -74,14 +71,6 @@ body {
   }
 }
 
-// .main {
-//   height: 100%;
-//   display: none;
-//   &.show {
-//     display: block;
-//   }
-// }
-
 .container {
   position: absolute;
   top: calc(50% - 222px);
@@ -90,11 +79,6 @@ body {
     display: block;
   }
   &.down {
-    // top: inherit;
-    // bottom: -180px;
-    // .cn-button {
-    //   top: 200px;
-    // }
     display: none;
     .slogan {
       display: none;
@@ -114,25 +98,25 @@ img {
   font-size: 3em;
   text-align: center;
   color: white;
-  text-shadow: 3px 3px 3px black;
   position: absolute;
-  left: calc(50% - 160px);
-  top: -160px;
-  font-family: 'Amatic SC', cursive;
+  left: calc(50% - 235px);
+  top: -110px;
+  font-family: 'Lato', Arial, sans-serif;
+  text-transform: uppercase;
   span {
-    font-size: 2rem;
+    font-size: 4rem;
     display: block;
   }
 }
 
-ul.sassGirls {
+ul.frontGirls {
   margin: 40px 0;
   li {
     border-radius: 500rem;
     width: 150px;
     height: 150px;
     margin: 0 10px  40px 0;
-    border: 3px solid $color;
+    border: 3px solid $accent-color;
     display: inline-block;
     text-align: center;
     background-size: cover;
@@ -145,7 +129,7 @@ ul.sassGirls {
     span {
       position: absolute;
       bottom: -30px;
-      color: $color;
+      color: $accent-color;
       width: 100px;
       left: calc(50% - 50px);
     }
@@ -172,7 +156,7 @@ ul.sassGirls {
 }
 
 .ladycircus {
-  background: url(../assets/ale.jpeg) 0 0 no-repeat;
+  background: url(../assets/aleja.jpeg) 0 0 no-repeat;
 }
 
 .oalberdi {
@@ -180,7 +164,7 @@ ul.sassGirls {
 }
 
 .close-button {
-  background: $color;
+  background: $accent-color;
   color: $white;
   width: 40px;
   height: 40px;
