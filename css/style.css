@@ -472,7 +472,7 @@ img {
   color: white;
   position: absolute;
   left: calc(50% - 235px);
-  top: -110px;
+  top: calc((-50vh + 134px)/2);
   font-family: 'Lato', Arial, sans-serif;
   text-transform: uppercase; }
   .slogan span {
