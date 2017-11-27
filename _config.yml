@@ -1,0 +1,35 @@
+# ----
+# Site
+
+title: nak-blog
+description: Is not going to be easy to maintain it =^-^=
+url: https://nabaroa.github.io/nak-blog/
+google_analytics_key:
+permalink:
+
+collections:
+  posts:
+    title: Posts
+    position: 1
+
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - readme.md
+  - LICENCE
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+
+types:
+  - event
+  - tutorial
+  - stuff
+
+categories:
