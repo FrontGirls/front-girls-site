@@ -1,91 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>FrontGirls</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
-	<link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
-	<link type="text/plain" rel="author" href="http://sassgirls.me/humans.txt" />
-	<script src="components/js/modernizr-2.6.2.min.js"></script>
+  <meta charset="UTF-8" />
+  <title>Front Girls</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link type="text/plain" rel="author" href="http://frontgirls.io/humans.txt" />
 </head>
+
 <body>
-	<div class="main">
-		<div class="container" id="menu">
-			<img class="logo" src="assets/logo.png" alt="FrontGirls">
-			<p class="slogan">Girls with
-			<span>superpowers</span></p>
-			<button class="cn-button icon-menu" id="cn-button"></button>
-			<div class="cn-wrapper" id="cn-wrapper">
-				<ul>
-					<li><a href="#" id="open-about"><span class="icon-supergirl"></span><em>About</em></a></li>
-					<li><a href="#"id="open-resources"><span class="icon-resources"></span><em>Resources</em></a></li>
-					<li><a href="https://github.com/FrontGirls" target="_blank"><span class="icon-github"></span><em>Github</em></a></li>
-					<li><a href="https://twitter.com/frontgirlsio"  target="_blank"><span class="icon-social-twitter"></span><em>Twitter</em></a></li>
-					<li><a href="http://open.spotify.com/user/kickdog/playlist/7JpXp2mHokSt5obAIrVsbw"  target="_blank"><span class="icon-spotify"></span><em>Spotify</em></a></li>
-				 </ul>
-			</div>
-		</div>
-	</div>
-	<main id="main">
-		<article class="main about" id="about">
-			<header>
-				<h1>About<i class="icon-supergirl"></i></h1>
+  <nav>
+    <ul>
+      <li class="menu__item">
+        <a class="menu__link" href="#" id="open-about">
+          <span class="menu__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-users">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </span>
+          <em class="menu__text">About</em>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#" id="open-resources">
+          <span class="menu__icon icon-resources">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-package">
+              <line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line>
+              <path
+                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+              </path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+          </span>
+          <em class="menu__text">Resources</em>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="https://github.com/FrontGirls" target="_blank">
+          <span class="menu__icon icon-github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-github">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+              </path>
+            </svg>
+          </span>
+          <em class="menu__text">Github</em>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="https://twitter.com/frontgirlsio" target="_blank">
+          <span class="menu__icon icon-social-twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-twitter">
+              <path
+                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+              </path>
+            </svg>
+          </span>
+          <em class="menu__text">Twitter</em>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="http://open.spotify.com/user/kickdog/playlist/7JpXp2mHokSt5obAIrVsbw" target="_blank">
+          <span class="menu__icon icon-spotify">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-music">
+              <path d="M9 18V5l12-2v13"></path>
+              <circle cx="6" cy="18" r="3"></circle>
+              <circle cx="18" cy="16" r="3"></circle>
+            </svg>
+          </span>
+          <em class="menu__text">Spotify</em>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <article class="overlay" id="about">
+      <button title="Close" class="overlay__close-btn js-overlay__close-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="feather feather-x">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="overlay__content">
+        <header>
+          <h1>About</h1>
+        </header>
+        <p>We are a five women forming a <strong>study group</strong> to improve our Front-End skills so we can have,
+          what we call, more superpowers.
+        </p>
+        <ul class="frontGirls">
+          <li class="frontGirls__item"><a class="frontGirls__link sormenpills" href="https://twitter.com/sormenpills"
+              target="_blank"><span class="frontGirls__text">@sormenpills</span></a></li>
+          <li class="frontGirls__item"><a class="frontGirls__link garazi" href="https://twitter.com/Garazi_i"
+              target="_blank"><span class="frontGirls__text">@Garazi_i </span></a></li>
+          <li class="frontGirls__item"><a class="frontGirls__link ladycircus" href="https://twitter.com/ladycircus"
+              target="_blank"><span class="frontGirls__text">@ladyCircus</span></a></li>
+          <li class="frontGirls__item"><a class="frontGirls__link oalberdi" href="https://twitter.com/oalberdi"
+              target="_blank"><span class="frontGirls__text">@oalberdi</span></a></li>
+          <li class="frontGirls__item"><a class="frontGirls__link nabaroa" href="https://twitter.com/nabaroa"
+              target="_blank"><span class="frontGirls__text">@nabaroa</span></a></li>
+        </ul>
+        <h2>Philosophy</h2>
+        <p>We want to improve as Front-End Developers and we know that we need to practice many hours to achieve it.
+          Unfortunately our daily schedules don´t let us enough free time left to study as much as we'd like, so we
+          have come up with a solution: the <strong>frontGirlsSessions</strong>.</p>
+        <p>We believe in learning by doing. Building front-end skills requires practice and pushing outside our
+          comfort zone. We all agree that <strong>learning should be fun</strong>.</p>
+        <h2>Methodology</h2>
+        <p>We are going to schedule frontGirlsSessions in our friday afternoons. In this sessions, we are going to
+          study and practice not only Sass and PostCSS, but git, grunt/gulp, npm and all the
+          <strong> new technologies</strong> we can potentially need for our daily work.
+        </p>
+        <p>The responsability of preparing the sessions will be of one of the frontGirls each week. It's simple: each
+          of us studies once a month but gets 4 lessons.</p>
+      </div>
+    </article>
+    <article class="overlay" id="resources">
+      <button title="Close" class="overlay__close-btn js-overlay__close-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="feather feather-x">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="overlay__content">
+        <header>
+          <h1>Resources</h1>
+        </header>
+        <p>
+          You can find all the resources and links we use in the frontGirlsSessions
+          <a href="https://docs.google.com/document/d/13XGElEClGgtX8amQjw-fofaKzzfhAcxjBUuCILdEq9I/edit?usp=sharing"
+            target="_blank">here</a>.
+        </p>
+        <p>If you want to send us a recource, feel free to
+          <a href="https://twitter.com/frontgirlsio" target="_blank">tweet us</a>.
+        </p>
+      </div>
+    </article>
+  </main>
+  <img class="logo" src="images/logo.png" alt="FrontGirls" />
+  <p class="slogan">Girls with <span>superpowers</span></p>
 
-				<div id="close-button" class="close-button icon-close">
-			</header>
-			<div class="content">
-				<p>We are a <strong>study team </strong>to improve our front-end skills, focused on having more superpowers. </p>
-				<ul class="frontGirls">
-					<li class="sormenpills"><a href="https://twitter.com/sormenpills" target="_blank"><span>@sormenpills</span></a></li>
-					<li class="garazi"><a href="https://twitter.com/Garazi_i" target="_blank"><span>@Garazi_i </span></a></li>
-					<li class="ladycircus"><a href="https://twitter.com/ladycircus" target="_blank"><span>@ladycircus</span></a></li>
-					<li class="oalberdi"><a href="https://twitter.com/oalberdi" target="_blank"><span>@oalberdi</span></a></li>
-					<li class="nabaroa"><a href="https://twitter.com/nabaroa" target="_blank"><span>@nabaroa</span></a></li>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-				</ul>
-				<h2>Philosophy</h2>
-				<p>We want to be better developers and we know that we have to spend lots of hours practicing to get it. Unfortunately the daily work don´t let us enough time left to study as much as we'd like, so here is the solution: <strong>frontGirlsSessions</strong>.</p>
-				<p>We all have one clear target: <strong>get fun learning</strong>.</p>
-				<p>Because, we believe in learning by doing. Building front-end skills requires practice and pushing outside our comfort zone.</p>
-				<h2>Methodology</h2>
-				<p>We are going to arrange frontGirlsSessions, using our friday afternoons' free hours. In this sessions, we are going to study and practice not only Sass and PostCSS, but Git, grunt/gulp, npm and all the technologies we can potentially need for our daily work. </p>
-				<p>The responsability of preparing the sessions will be of one of the frontGirls each week. It's simple: study once a month, but get 4 lessons.</p>
-
-			</div>
-
-			</div>
-		</article>
-		<article class="main resources" id="resources">
-		<header>
-				<h1>Resources<i class="icon-resources"></i></h1>
-
-				<div id="close-button-res" class="close-button icon-close">
-			</header>
-			<div class="content">
-			<p>
-				You can find all the resources and links we use in the frontGirlsSessions
-				<a class="banner" href="https://docs.google.com/document/d/13XGElEClGgtX8amQjw-fofaKzzfhAcxjBUuCILdEq9I/edit?usp=sharing" target="_blank">here</a>
-			</p>
-			<p>If you want to send us a recource, feel free to <a class="banner" href="https://twitter.com/frontgirlsio" target="_blank">tweet us</a></p>
-
-
-			</div>
-		</article>
-	</main>
-
-	<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-54395135-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-	<!-- Circular navigation -->
-	<script src="components/js/polyfills.js"></script>
-	<script src="components/js/frontGirls.js"></script>
+    ga('create', 'UA-54395135-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script src="/js/index.js"></script>
 </body>
+
 </html>
